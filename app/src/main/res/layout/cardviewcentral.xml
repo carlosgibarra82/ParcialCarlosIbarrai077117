@@ -9,7 +9,7 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content">
 
         <RelativeLayout
             android:layout_width="wrap_content"
@@ -19,11 +19,13 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:layout_margin="10dp">
+                android:layout_margin="10dp"
+                android:layout_alignParentLeft="true">
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Fecha de Lanzamiento"/>
+                    android:text="Fecha de Lanzamiento"
+                    android:textStyle="bold"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -33,20 +35,22 @@
 
             <LinearLayout
                 android:id="@+id/texto2"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:layout_margin="10dp"
-                android:layout_toRightOf="@+id/texto1">
+                android:layout_toRightOf="@+id/texto1"
+                android:layout_alignParentRight="true">
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Fecha de Lanzamiento"/>
+                    android:text="Director"
+                    android:textStyle="bold"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="diciembre 20,2018"/>
+                    android:text="Abraham Gooner"/>
             </LinearLayout>
 
             <LinearLayout
@@ -55,16 +59,17 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:layout_margin="10dp"
-                android:layout_below="@+id/texto1">
+                android:layout_alignParentBottom="true">
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Fecha de Lanzamiento"/>
+                    android:text="Fecha de Lanzamiento"
+                    android:textStyle="bold"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="diciembre 20,2018"/>
+                    android:text="1 hora 34 minutos"/>
             </LinearLayout>
 
             <LinearLayout
@@ -73,16 +78,18 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:layout_margin="10dp"
-                android:layout_below="@+id/texto2">
+                android:layout_toRightOf="@id/texto3"
+                android:layout_alignParentBottom="true">
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Fecha de Lanzamiento"/>
+                    android:text="Puntuación"
+                    android:textStyle="bold"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="diciembre 20,2018"/>
+                    android:text="364 críticas"/>
             </LinearLayout>
 
 
